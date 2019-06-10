@@ -1,3 +1,85 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Advent Pro');
+@import 'mixins';
+
+html {
+  min-height: 100%;
+  height: 100%;
+ }
+
+ body {
+  font-family: 'Advent Pro' !important;
+ }
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #3513ac, #4d8cf1);
+
+  .container {
+    width: 70%;
+
+    .home-header {
+      width: 100%;
+      display: flex;
+      height: 60px;
+      border-bottom: 0.25px solid #bab6b6;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+
+    .home-content {
+      margin-top: 120px;
+      display: flex;
+
+      h1 {
+        color: #fff;
+        font-weight: bold;
+      }
+
+      p {
+        color: #f3efef;
+      }
+
+      .page-desc-wrapper {
+        width: 50%;
+
+        .page-action-wrapper {
+          display: flex;
+          width: 60%;
+          justify-content: space-between;
+          margin-top: 20px;
+
+          .try-button {
+            @include a-button;
+            width: 100px;
+            background: #08bfa8;
+            color: #fff;
+          }
+
+          .login-button {
+            @include a-button;
+            width: 80px;
+            background: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+          }
+        }
+      }
+
+      .page-illus-wrapper {
+        width: 50%;
+        img {
+          width: 90%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

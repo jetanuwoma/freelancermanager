@@ -1,3 +1,29 @@
-<p id=”notice”><%= notice %></p>
-<h1>Example</h1>
-<p>Lorem ipsum …</p>
+<div class="wrapper">
+  <div class="container">
+   <!-- Landing page header-->
+    <div class="home-header">
+      <div class="app-logo">
+        <%= image_tag  "logo.png", class: 'logo' %>
+      </div>
+     <a href="login">Sign In -></a>
+    </div>
+    <!-- Body Content -->
+    <div class="home-content">
+      <div class="page-desc-wrapper">
+        <h1>The Whole</h1>
+        <h1>Devflow all in one place</h1>
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis
+        </p>
+        <div class="page-action-wrapper">
+          <a href="register" class="try-button">Try fo free</a>
+          <a href="login" class="login-button">Login</a>
+        </div>
+      </div>
+      
+      <div class="page-illus-wrapper">
+        <%= image_tag  "laptop.png" %>
+      </div>
+    </div>
+  </div>
+</div>
